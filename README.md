@@ -291,4 +291,35 @@ guest.name = Sehyeon
 guest.age = 23
 ```
 **공용체**
+서로 다른 데이터형을 한 번에 한 가지만 보관할 수 있는 데이터 형식<br>
+즉 구조체는 여러 데이터형을 한 번에 보관할수 있지만 공용체는 하나의 데이터형 만 보관할수 있다.<br>
+예시로 아래의 코드를 생각해보자
+```cpp
+union sample
+{
+  int int_sample
+  long long_sample
+}
+```
+만약 int_sample에 값을 저장한 후 long_sample에 값을 저장한다면<br>
+int_sample 의 값은 소실되게 된다.<br>
+즉 union 은 **특정 공간을 효율적으로 관리**하기 위해<br>
+struct 는 **데이터를 효율적으로 처리**하기 위해서 사용된다.<br>
+아래의 링크에서 Union의 보다 자세한 설명을 다룬다.<br>
+[**Union 왜 쓰는지?**](https://suho413.tistory.com/entry/Union-%EC%82%AC%EC%9A%A9-%EC%9D%B4%EC%9C%A0)
+
+<br>**열거체**<br>
+열거체는 코드로 보는것이 이해가 빨라 코드를 사용하여 설명하겠다.<br>
+```cpp
+enum sample {one,two,three};
+```
+위 구문은 아래 두 가지 일을 수행한다.
+  - sample을 새로운 데이터형의 이름으로 만든다. enum형 변수를 열거체 라고 부른다
+  - one,two,three 등을 0에서 2까지의 정수 값을 각각 나타내는 기호 상수로 만든다. 이 상수들을 열거자라 부른다.
+
+아래 코드처럼 열거자 값을 설정할수도 있다.
+```cpp
+enum sample {one = 3, two = 4, three = 5}
+```
+단 대입되는 값은 정수여야 한다.
 # 05장 루프와 과계 표현식
