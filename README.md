@@ -157,26 +157,6 @@ C++의 여러 정수형들은 서로 다른 크기의 메모리를 사용한다.
 **sizeof 와 climits**<br>
 sizeof : 자료형 또는 변수의 크기를 byte 단위로 반환하는 연산자
 climits : 데이터형의 한계값을 나타내기 위한 기호 상수들이 정의되어 있는 헤더<br>
- 기호상수|의미 
- :--:|:-- 
-CHAR_BIT | char형의 비트 수
-CHAR_MAX | char형의 최대값
-CHAR_MIN | char형의 최소값
-SCHAR_MAX | signed char형의 최대값
-SCHAR_MIN | signed char형의 최소값
-UCHAR_MAX | unsigned char형의 최대값
-SHRT_MAX | short형의 최대값
-SHRT_MIN | short형의 최소값
-USHRT_MAX | unsigned short형의 최대값
-INT_MAX | int형의 최대값
-INT_MIN | int형의 최소값
-UINT_MAX | unsigned int형의 최대값
-LONG_MAX | long형의 최대값
-LONG_MIN | long형의 최소값
-ULONG_MAX | unsigned long형의 최대값
-LLONG_MAX | long long형의 최대값
-LLONG_MIN | long long형의 최소값
-ULLONG_MAX | unsigned long long형의 최대값
 
 **unsigned**<br>
   - unsigned 형은 음수값 표현을  포기함으로 자료형이 표현할수 있는 양수값의 범위를 늘린것<br>
